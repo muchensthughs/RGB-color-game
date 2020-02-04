@@ -1,0 +1,84 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+#colors {
+	margin: 20px auto;
+	width: 70%;
+	max-width: 600px;
+}
+
+.block {
+	width: 30%;
+	margin: 1.66%;
+	float: left;
+	background-color: yellow;
+	padding-bottom: 30%;
+	border-radius: 25px;
+	transition: background-color 0.6s;
+	-webkit-transition: background-color 0.6s;
+	-moz-transition: background-color 0.6s;
+	transition: 0.5s;
+}
+
+.block:hover {
+	transform: scale(1.1);
+}
+
+h1 {
+	color: white;
+	text-align: center;	
+	background-color: steelblue;
+	margin: 0;
+	padding: 10px 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.05;
+}
+
+#colorDisplay {
+	font-size: 2.0em;
+}
+
+#subtitle {
+	background-color: white;
+	text-align: center;
+	height: 30px;
+}
+
+#notice {
+	display: inline-block;
+	width: 20%;
+	/*specifying height to 100% 
+	result in downshift in buttons at starting page???? */
+	/*height: 100%;*/
+}
+
+button {
+	border: none;
+	/*background color would be gray in some browser 
+	if background is not set to none*/
+	background: none; 
+	text-transform: uppercase;
+	/*specifying relative size only applies 
+	when the parent has a fixed size in that same dimention*/
+	height: 100%;
+	font-weight: 700; 
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	outline: none;
+}
+
+.selected {
+	background-color: steelblue;
+	color: white;
+}
+
+button:hover {
+	color: white;
+	background: steelblue;
+}
